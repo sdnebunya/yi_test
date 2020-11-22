@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>workShop</display-name>
+  <servlet>
+    <servlet-name>shohinList</servlet-name>
+    <servlet-class>controller.ListController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>shohinList</servlet-name>
+    <url-pattern>/list</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>shohinDetail</servlet-name>
+    <servlet-class>controller.DetailController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>shohinDetail</servlet-name>
+    <url-pattern>/detail</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>shohinBuy</servlet-name>
+    <servlet-class>controller.DetailController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>shohinBuy</servlet-name>
+    <url-pattern>/result</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+</web-app>
